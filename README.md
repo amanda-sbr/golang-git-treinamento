@@ -180,15 +180,15 @@ Você fez um `commit`, mas percebeu que digitou a mensagem errada ou esqueceu de
     git add arquivo-que-esqueci.go
     ```
 2.  **Use `amend`:** Este comando "emenda" (corrige) o *commit* anterior.
+
     ```bash
-sh
     # O '--amend' vai abrir o editor de texto para você corrigir a mensagem.
     git commit --amend
     
     # Se você só queria adicionar arquivos e a mensagem estava OK:
     git commit --amend --no-edit
     ```
-3.  **Atenção:** Como você já deu `push` nesse *commit*, o `amend` reescreve o histórico. Você precisará "forçar" o *push*.
+4.  **Atenção:** Como você já deu `push` nesse *commit*, o `amend` reescreve o histórico. Você precisará "forçar" o *push*.
     ```bash
     # Force-push com segurança (só atualiza se ninguém mais mexeu na branch)
     git push --force-with-lease
