@@ -23,6 +23,19 @@ func main() {
 		fmt.Println(linha)
 	}
 
+	fmt.Println()
+	colegas := map[string]int{
+		"lê":      27,
+		"fanta":   19,
+		"isarão":  26,
+		"farinha": 21,
+		"poru":    22,
+	}
+
+	for k, v := range colegas {
+		fmt.Printf("%s, %d anos\n", k, v)
+	}
+
 }
 
 func soma(a int, b int) int {
