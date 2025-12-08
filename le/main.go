@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -12,6 +15,12 @@ func main() {
 	frutas := []string{"Morango", "Abacate", "Laranja"}
 	for _, fruta := range frutas {
 		fmt.Println(fruta)
+	}
+
+	fmt.Println()
+	for i := 1; i < 6; i++ {
+		linha := strings.Repeat("*", i)
+		fmt.Println(linha)
 	}
 
 }
