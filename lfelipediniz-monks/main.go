@@ -12,6 +12,15 @@ func main() {
 	for i, fruta := range frutas {
 		fmt.Println(i, fruta)
 	}
+
+	// print do triangulo de * 
+	for i := 0; i <= 5; i++ {
+		for j := 0; j < i; j++ {
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+
 }
 
 func soma(a int, b int) int {
