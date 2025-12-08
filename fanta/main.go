@@ -21,8 +21,8 @@ func main(){
 
 	frutas := []string{"Maçã", "Uva", "Pera", "Abacaxi", "Banana"};
 
-	for i := 0; i < len(frutas); i++ {
-		fmt.Println(frutas[i]);
+	for _, fruta := range frutas{
+		fmt.Println(fruta);
 	}
 
 
@@ -37,8 +37,38 @@ func main(){
 			fmt.Print("*");
 		}
 
-		fmt.Println();
+		fmt.Println(); // pra quebrar linha no final
 	}
+
+	// Desafio 4 (Bônus)
+
+	pessoas := map[string]int{}; // nome --> idade
+	var option int;
+
+	for{
+		fmt.Println(`Escolha uma opçao:
+	0. Quebrar loop
+	1. Adicionar novo nome e idade`);
+
+		fmt.Scan(&option);
+
+		if option == 0{
+			break;
+		}
+
+		var nome string;
+		var idade int;
+
+		fmt.Scan(&nome, &idade);
+
+		pessoas[nome] = idade;
+
+	}
+
+	for nome, idade := range pessoas{
+		fmt.Println(nome, idade);
+	}
+
 }
 
 
