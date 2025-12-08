@@ -24,8 +24,24 @@ func main(){
 	for i := 0; i < len(frutas); i++ {
 		fmt.Println(frutas[i]);
 	}
-	
+
+
+	// Desafio 3
+
+	var qtdLinhas int;
+	fmt.Println("Insira a quantidade de linhas a serem impressas");
+	fmt.Scan(&qtdLinhas);
+
+	for i := 1; i <= qtdLinhas; i++{
+		for j := 1; j <= i; j++{
+			fmt.Print("*");
+		}
+
+		fmt.Println();
+	}
 }
+
+
 
 
 func soma(n1 int , n2 int) int{
