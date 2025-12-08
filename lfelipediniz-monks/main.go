@@ -3,29 +3,55 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Olá, mundo! Meu nome é Poru e estou pronto para começar!")
-	fmt.Println(soma(1, 2))
+	fmt.Println("\nOlá, mundo! Meu nome é Poru e estou pronto para começar!")
 
-	// slice de strings com 3 frutas
+	resultadoSoma := soma(1, 2)
+	fmt.Println("\nDesafio 1: Resultado da soma:\n1 + 2 = ",resultadoSoma)
+
+	fmt.Println("\nDesafio 2: Lista de frutas com Slice")
 	frutas := []string{"maçã", "banana", "laranja"}
+	imprimirSlice(frutas)
 
-	for i, fruta := range frutas {
-		fmt.Println(i, fruta)
+	fmt.Println("\nDesafio 3: Triângulo de asteriscos")
+	imprimirTriangulo(5)
+
+	fmt.Println("\nDesafio 4: Idades da equipe")
+	idadesDaEquipe := criarMapIdades()
+	imprimirMap(idadesDaEquipe)
+}
+
+// --------------------------------------------------
+// Funções dos desafios 
+// --------------------------------------------------
+
+// soma retorna a soma de dois inteiros
+func soma(a int, b int) int {
+	return a + b
+}
+
+// itera e imprime os elementos de um slice de strings
+func imprimirSlice(itens []string) {
+	fmt.Println("--- Lista de Frutas ---")
+	for i, item := range itens {
+		fmt.Printf("%d: %s\n", i, item)
 	}
+}
 
-	// print do triangulo de * 
+// imprime um triângulo de asteriscos com a altura especificada
+func imprimirTriangulo(altura int) {
+	fmt.Println("--- Triângulo de Asteriscos ---")
 	for i := 0; i <= 5; i++ {
 		for j := 0; j < i; j++ {
 			fmt.Print("*")
 		}
 		fmt.Println()
 	}
+}
 
-	fmt.Println("\n")
-
-	// map onde a chave eh uma string (nome) e o valor eh um int (idade) 
-	// do pessoal que estava na call
-	idades := map[string]int{
+// cria e retorna um map de nomes para idades
+func criarMapIdades() map[string]int {
+	// pessoal que estava na call
+	return map[string]int{
 		"Fanta": 20,
 		"Poru": 21,
 		"Ana": 22,
@@ -37,19 +63,12 @@ func main() {
 		"Le": 28,
 		"Madu": 29,
 	}
+}
 
-	for nome, idade := range idades {
-		fmt.Println(nome, idade)
+// itera e imprime as chaves e valores de um map de string para int
+func imprimirMap(dados map[string]int) {
+	fmt.Println("--- Idades Inventadas da Equipe ---")
+	for nome, idade := range dados {
+		fmt.Printf("Nome: %s, Idade: %d\n", nome, idade)
 	}
-
 }
-
-func soma(a int, b int) int {
-	return a + b
-}
-
-
-
-
-
-
