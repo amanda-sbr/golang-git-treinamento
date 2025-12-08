@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	fmt.Printf("Opa, meu nome é Caio e eu sou estagiário da Monks!\n\n")
@@ -11,6 +14,11 @@ func main() {
 
 	for index, fruta := range frutas {
 		fmt.Printf("Fruta n° %v: %s\n", index, fruta)
+	}
+
+	fmt.Println()
+	for i := 1; i <= 5; i++ {
+		fmt.Printf("%s\n", strings.Repeat("*", i))
 	}
 }
 
