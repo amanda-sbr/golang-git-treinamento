@@ -3,5 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Printf("Opa, meu nome é Caio e eu sou estagiário da Monks!")
+	fmt.Printf("Opa, meu nome é Caio e eu sou estagiário da Monks!\n\n")
+
+	fmt.Printf("Resultado da soma: %v\n\n", soma(5, 5))
+}
+
+func soma(a int, b int) int {
+	return a + b
 }
