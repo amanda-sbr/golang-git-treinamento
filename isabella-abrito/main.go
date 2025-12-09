@@ -40,7 +40,15 @@ Para o casamento
 Fazendo rendinha, ô maninha
 Para o casamento`)
 
+	//desafio 01
 	fmt.Println("\n\nO resultado da soma é: ", soma(5, 5))
+
+	//desafio 02
+	slice := []string{"Uva", "Pera", "Maçã", "Salada mista"}
+	fmt.Printf("\nImprimindo frutas:\n")
+	for _, fruta := range slice {
+		fmt.Println(fruta)
+	}
 
 }
 
