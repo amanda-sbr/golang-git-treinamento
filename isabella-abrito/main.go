@@ -59,8 +59,25 @@ Para o casamento`)
 		fmt.Println()
 	}
 
+	//desafio extra
+	colegas := map[string]int{
+		"Isarão": 28, 
+		"Farinha": 24, 
+		"Poru": 21,
+		"Lê": 27,
+		"Fanta": 19,
+	}
+	fmt.Printf("\nNome e idade dos novos estagiários:\n")
+	for nome, idade := range colegas{
+		fmt.Println(nome, "-", idade)
+	}
+
+	//imprimindo aviso qualquer
+	fmt.Printf("\nApenas adicionando um print para testar o comando amend")
+
 }
 
+	
 func soma(a int, b int) int {
 	return a + b
 }
