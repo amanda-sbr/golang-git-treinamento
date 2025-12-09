@@ -50,6 +50,15 @@ Para o casamento`)
 		fmt.Println(fruta)
 	}
 
+	//desafio 03
+	fmt.Printf("\nImprimindo asteriscos\n")
+	for i := 1; i <=5; i++ {
+		for j := 1; j <= i; j++{
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+
 }
 
 func soma(a int, b int) int {
