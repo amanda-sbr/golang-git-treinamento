@@ -39,4 +39,11 @@ Fazendo rendinha, ô maninha
 Para o casamento
 Fazendo rendinha, ô maninha
 Para o casamento`)
+
+	fmt.Println("\n\nO resultado da soma é: ", soma(5, 5))
+
+}
+
+func soma(a int, b int) int {
+	return a + b
 }
