@@ -72,8 +72,12 @@ Para o casamento`)
 		fmt.Println(nome, "-", idade)
 	}
 
+	//imprimindo aviso qualquer
+	fmt.Printf("\nApenas adicionando um print para testar o comando amend")
+
 }
 
+	
 func soma(a int, b int) int {
 	return a + b
 }
